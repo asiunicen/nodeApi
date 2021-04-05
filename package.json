@@ -1,0 +1,37 @@
+{
+  "name": "demorestapi",
+  "version": "1.0.0",
+  "description": "login sia",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "nodemon --exec babel-node src/index.js",
+    "serve": "node dist/index.js",
+    "build": "babel src/ --out-dir dist"
+  },
+  "keywords": [
+    "login",
+    "node",
+    "express"
+  ],
+  "author": "bautista",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "connect-history-api-fallback": "^1.6.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "nodemon": "^2.0.6"
+  }
+}
